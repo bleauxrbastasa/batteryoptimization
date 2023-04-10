@@ -35,4 +35,8 @@ def csvInputLoop():
     
     unoptimized_csv = osc.cv
     
-    for x in data_csv: 
+    with open("./bwq.csv", 'r') as file:
+        csvreader = csv.reader(file)
+        for row in csvreader:
+            print(row)
+            
